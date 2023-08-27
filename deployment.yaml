@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace : dk1230
+  name: niebo
+spec:
+  replica: 3
+  selector:
+    matchLabels:
+      app: niebo
+  template:
+    metadata:
+      labels:
+        app: niebo
+    spec:
+      containers:
+      - name: niebo-housing
+        image: swamy877/cipipeline:49
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
