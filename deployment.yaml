@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: niebo-housing
-        image: swamy881/cipipeline:81
+        image: swamy877/cipipeline:81
         resources:
           limits:
             memory: "128Mi"
