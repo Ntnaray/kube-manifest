@@ -4,7 +4,7 @@ metadata:
   namespace : dk1230
   name: niebo
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: niebo
